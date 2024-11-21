@@ -580,3 +580,17 @@ hr{
     right: 0;
     transform: rotate(135deg);
 }
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social__item{
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+}
