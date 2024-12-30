@@ -15,20 +15,20 @@
 </head>
 <body>
 
-<header class="header active">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">Genshin</div>
+            <div class="header__logo" data-scroll="#intro">Genshin</div>
             <!-- навігація : посилання, іконки :--> 
-             <nav class="nav">
-                <a class="nav__link active">About</a>
-                <a class="nav__link">Characters</a>
-                <a class="nav__link">Maps</a>
-                <a class="nav__link">Videos</a>
-                <a class="nav__link">Contacts</a>
+             <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">Characters</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Maps</a>
+                <a class="nav__link" href="#" data-scroll="#works">Videos</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contacts</a>
              </nav>
 
-             <button class="nav-toggle active" type="button">
+             <button class="nav-toggle" id="nav_toggle" type="button">
                 <span class="nav-toggle__item">Menu</span>
              </button>
 
@@ -36,7 +36,9 @@
         </div>
     </div>
 </header>
-<div class="intro">
+
+<!-- Intro  -->
+<div class="intro" id="intro">
     <div class="container">
         <div class="intro__inner">
             <h2 class="intro__suptitle">Hrozdiev Oleksandr</h2>
@@ -71,7 +73,8 @@
 
 </div> <!-- закриття intro -->
  
-<selection class="selection">
+<!-- About  -->
+<selection class="selection" id="about">
     <div class="container">
         <div class="section__header">
             <h3 class="section__suptitle">What about want i say?</h3>
@@ -115,6 +118,7 @@
     
 </selection>
 
+<!-- Statistics  -->
 <div class="statistics">
     <div class="container">
 
@@ -144,8 +148,8 @@
     </div>
 </div>
 
-
-<section class="section">
+<!-- Services  -->
+<section class="section" id="services">
     <div class="container">
 
         <div class="section__header">
@@ -198,6 +202,7 @@
     </div>  <!-- Закриття div container  -->
 </section>
 
+<!-- Devices  -->
 <section class="section section--devices">
     <div class="container">
 
@@ -214,7 +219,7 @@
     </div>
 </section>
 
-
+<!-- WeDo  -->
 <section class="section">
     <div class="container">
 
@@ -235,20 +240,20 @@
             <div class="wedo__item">
 
                 <div class="accordion">
-                    <div class="accordion__item">
+                    <div class="accordion__item" data-collapse="#wedo_1">
                         <div class="accordion__header">
                             <img class="accordion__icon" src="" alt="">
-                            <div class="accordion__title">Photography</div>
+                            <div class="accordion__title" >Photography</div>
                         </div>
-                        <div class="accordion__content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere assumenda, voluptates placeat iure molestiae? Dolor at nobis repellat dolores assumenda error sunt magnam amet illo voluptatum! Ad, blanditiis culpa?</p></div>
+                        <div class="accordion__content" id="wedo_1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere assumenda, voluptates placeat iure molestiae? Dolor at nobis repellat dolores assumenda error sunt magnam amet illo voluptatum! Ad, blanditiis culpa?</p></div>
                     </div>
 
-                    <div class="accordion__item active">
-                        <div class="accordion__header">
+                    <div class="accordion__item">
+                        <div class="accordion__header" data-collapse="#wedo_2">
                             <img class="accordion__icon" src="" alt="">
-                            <div class="accordion__title">Creativity</div>
+                            <div class="accordion__title" >Creativity</div>
                         </div>
-                        <div class="accordion__content">
+                        <div class="accordion__content" id="wedo_2">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere assumenda, voluptates placeat iure
                                 molestiae? Dolor at nobis repellat dolores assumenda error sunt magnam amet illo voluptatum! Ad, blanditiis
                                 culpa?</p>
@@ -256,12 +261,12 @@
                     </div>
 
                     <div class="accordion">
-                        <div class="accordion__item">
-                            <div class="accordion__header">
+                        <div class="accordion__item" data-collapse="#wedo_3">
+                            <div class="accordion__header" >
                                 <img class="accordion__icon" src="" alt="">
-                                <div class="accordion__title">Photography</div>
+                                <div class="accordion__title" >Something</div>
                             </div>
-                            <div class="accordion__content">
+                            <div class="accordion__content" id="wedo_3">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere assumenda, voluptates placeat iure
                                     molestiae? Dolor at nobis repellat dolores assumenda error sunt magnam amet illo voluptatum! Ad,
                                     blanditiis culpa?</p>
@@ -277,21 +282,26 @@
     </div>
 </section>
 
+<!-- Reviews 1  -->
 <div class="section section--gray">
     <div class="container">
-
+        
         <div class="reviews">
+            <a class="reviews__btn" reviews__btn--prev href="#">Prev</a>
+            <a class="reviews__btn" reviews__btn--next href="#">Next</a>
+        
             <div class="reviews__item">
-                <img class="reviews__photo" src="http://placehold.it/210" alt="">
+                <img class="reviews__photo" src="http://placehold.it/145" alt="">
                 <div class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo laborum totam suscipit exercitationem facere distinctio hic tenetur, nihil porro odio, aliquam tempore, officia esse ad officiis vero deleniti quia!</div>
                 <div class="reviews__author">Jon Doe</div>
             </div>
         </div>
+        
 
     </div>
 </div>
 
-
+<!-- Team  -->
 <section class="section">
     <div class="container">
 
@@ -393,6 +403,7 @@
     </div>  <!-- /.container  -->
 </section>
 
+<!-- Logos  -->
 <div class="section section--gray" >
     <div class="container">
 
@@ -420,7 +431,8 @@
     </div>
 </div>
 
-<section class="section">
+<!-- Works  -->
+<section class="section" id="works">
     <div class="container">
 
         <div class="section__header">
@@ -498,7 +510,7 @@
     </div> <!-- /.works  -->
 </section> 
 
-
+<!-- Reviews 2  -->
 <div class="section">
     <div class="container">
 
@@ -518,7 +530,7 @@
     </div>
 </div>
 
-
+<!-- Clients  -->
 <section class="section section--client">
     <div class="container">
 
@@ -568,7 +580,8 @@
     </div> <!-- /.container -->
 </section>
 
-<section class="section">
+<!-- Blog  -->
+<section class="section" id="blog">
     <div class="container">
 
         <div class="section__header">
@@ -646,6 +659,7 @@
     </div> <!-- /. container -->
 </section>
  
+<!-- Map  -->
 <section class="section section--map">
     <div class="container">
         <div class="map">
@@ -658,7 +672,8 @@
     </div>
 </section>
 
-<footer class="footer">
+<!-- Footer  -->
+<footer class="footer" id="footer">
     <div class="container">
 
         <div class="footer__inner">
@@ -765,5 +780,9 @@
     </div> <!-- /.container -->
 </footer>
 
+<!-- Підключення jquery :  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Бібліотека для слайдеру  -->
+<script src="/assets/Js/app.js"></script> <!-- Підключення JavaScript  -->
 </body>
 </html>
